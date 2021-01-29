@@ -34,16 +34,13 @@ if (randomNumber == '1') {
   function displayResult(argPlayerMove, argComputerMove){
     if(argPlayerMove == 'papier' && argComputerMove == 'kamień'){
       printMessage('Wygrywasz!');
-    } else {
-      printMessage('Przegrywasz :(');
     } if(argPlayerMove == 'nożyce' && argComputerMove == 'papier'){
       printMessage('Wygrywasz!');
-    } else {
-      printMessage('Przegrywasz :(');
     } if(argPlayerMove == 'kamień' && argComputerMove == 'nożyce'){
       printMessage('Wygrywasz!');
-    } else {
-      printMessage('Przegrywasz :(');
-    }
+    } else { printMessage ('Przykro mi, przegrywasz ;)');
+  }
+  
   
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+}
