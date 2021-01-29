@@ -1,5 +1,5 @@
 var computerMove, playerMove, playerInput, randomNumber;;
-playerInput = prompt ('wybierz swór ruch: 1:papier, 2:nożyce, 3:kamień')
+playerInput = prompt ('wybierz swór ruch: 1:kamień, 2:papier, 3:nożyce')
 console.log('Wpisana odpowiedź to: ' + playerInput);
 if (playerInput == '1'){playerMove = 'kamień'; }
 else if (playerInput == '2') {playerMove = 'papier' ;}
@@ -44,3 +44,4 @@ if (randomNumber == '1') {
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 displayResult(playerMove, computerMove);
+
