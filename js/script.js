@@ -1,12 +1,10 @@
-var computerMove, playerMove, playerInput, randomNumber;;
+var computerMove, playerMove, playerInput, randomNumber, argButtonName, buttonTest, buttonKamień, buttonNożyce, buttonPapier ;
 playerInput = prompt ('wybierz swór ruch: 1:kamień, 2:papier, 3:nożyce')
 console.log('Wpisana odpowiedź to: ' + playerInput);
 if (playerInput == '1'){playerMove = 'kamień'; }
 else if (playerInput == '2') {playerMove = 'papier' ;}
 else if (playerInput == '3') {playerMove = 'nożyce' ;}
 printMessage('Twój ruch: ' + playerMove);
-
-
 
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
@@ -20,28 +18,16 @@ if (randomNumber == '1') {
   printMessage('Mój ruch: ' + computerMove);
 
   var argMoveId, argPlayerMove, argComputerMove;
-  function getMoveName(argMoveId) {
-    console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
-    if (argMoveId == 1) {
-      return 'kamień';
-    } else if (argMoveId == 2) {
-     return 'papier'; 
-    } else if (argMoveId == 3) {
-      return 'nożyce';
-    }
-  }
-
-  function displayResult(argPlayerMove, argComputerMove){
-    if(argPlayerMove == 'papier' && argComputerMove == 'kamień'){
-      printMessage('Wygrywasz!');
-    } if(argPlayerMove == 'nożyce' && argComputerMove == 'papier'){
-      printMessage('Wygrywasz!');
-    } if(argPlayerMove == 'kamień' && argComputerMove == 'nożyce'){
-      printMessage('Wygrywasz!');
-    } else { printMessage ('Przegrywasz');
-    }
-    
-    printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-}
+  
 displayResult(playerMove, computerMove);
 
+
+buttonTest = document.getElementById('button-test');
+buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
+
+buttonKamień = document.getElementById('button-rock');
+buttonTest.addEventListener('click',{ buttonClicked('kamień'); });
+buttonNożyce = document.getElementById('button-scissors');
+buttonTest.addEventListener('click',{ buttonClicked('nożyce'); });
+buttonPapier = document.getElementById('button-paper')
+buttonTest.addEventListener('click',{ buttonClicked('papier'); });
