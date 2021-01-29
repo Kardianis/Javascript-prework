@@ -38,9 +38,9 @@ if (randomNumber == '1') {
       printMessage('Wygrywasz!');
     } if(argPlayerMove == 'kamień' && argComputerMove == 'nożyce'){
       printMessage('Wygrywasz!');
-    } else { printMessage ('Przykro mi, przegrywasz ;)');
-  }
-  
-  
+    } else { printMessage ('Przegrywasz');
+    }
+    
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
+displayResult(playerMove, computerMove);
