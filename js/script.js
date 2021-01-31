@@ -1,5 +1,7 @@
-var computerMove, playerMove, playerInput, randomNumber, argButtonName, buttonTest, buttonKamień, buttonNożyce, buttonPapier ;
-playerInput = prompt ('wybierz swór ruch: 1:kamień, 2:papier, 3:nożyce')
+var computerMove, playerMove, playerInput, randomNumber, argButtonName, buttonTest, buttonRock, buttonScissors, buttonPaper ;
+
+playerMove = argButtonName; 
+
 console.log('Wpisana odpowiedź to: ' + playerInput);
 if (playerInput == '1'){playerMove = 'kamień'; }
 else if (playerInput == '2') {playerMove = 'papier' ;}
@@ -23,11 +25,19 @@ displayResult(playerMove, computerMove);
 
 
 buttonTest = document.getElementById('button-test');
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
+buttonTest.addEventListener('click', function(){ 
+  buttonClicked('Guzik TEST') 
+});
 
-buttonKamień = document.getElementById('button-rock');
-buttonTest.addEventListener('click',{ buttonClicked('kamień'); });
-buttonNożyce = document.getElementById('button-scissors');
-buttonTest.addEventListener('click',{ buttonClicked('nożyce'); });
-buttonPapier = document.getElementById('button-paper')
-buttonTest.addEventListener('click',{ buttonClicked('papier'); });
+buttonRock.addEventListener('click', function () {
+   buttonClicked('kamień')
+  });
+buttonRock = document.getElementById('button-rock');
+buttonScissors.addEventListener('click', function () { 
+  buttonClicked('nożyce')
+ });
+buttonScissors = document.getElementById('button-scissors');
+buttonPaper.addEventListener('click', function () { 
+  buttonClicked('papier')
+ });
+buttonPaper = document.getElementById('button-paper');
