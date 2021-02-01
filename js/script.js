@@ -28,16 +28,15 @@ buttonTest = document.getElementById('button-test');
 buttonTest.addEventListener('click', function(){ 
   buttonClicked('Guzik TEST') 
 });
-
+buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function () {
    buttonClicked('kamień')
   });
-buttonRock = document.getElementById('button-rock');
+buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function () { 
   buttonClicked('nożyce')
  });
-buttonScissors = document.getElementById('button-scissors');
+buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function () { 
   buttonClicked('papier')
  });
-buttonPaper = document.getElementById('button-paper');
