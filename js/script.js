@@ -9,6 +9,7 @@ buttonTest.addEventListener('click', function(){
 buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function () {
    buttonClicked('kamień')
+   console.log(playerInput) ;
   });
 buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function () { 
@@ -39,5 +40,3 @@ if (randomNumber == '1') {
   var argMoveId, argPlayerMove, argComputerMove;
   
 displayResult(playerMove, computerMove);
-
-
