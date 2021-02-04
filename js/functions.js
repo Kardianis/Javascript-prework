@@ -36,3 +36,8 @@ function buttonClicked(argButtonName) {
 	clearMessages();
 	console.log(argButtonName + ' został kliknięty');
   }
+
+  function chooseButton(button){
+    const = BUTTON = ['button-rock', 'button-paper', 'button-scissors'] ;
+    const 
+  }
