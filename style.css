@@ -1,0 +1,68 @@
+*{
+    font-family: Tahoma;
+}
+
+.symbole {
+    display:flex;
+    justify-content: space-around;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.symbol {
+    cursor: pointer;
+    border:5px solid gray;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex: 200px 1 1;
+    background-position: center center;
+}
+.symbol:hover {
+    border:5px solid green;
+}
+.symbol--kamien {
+    background-image: url(images/kamien.png);
+}
+/* .symbol--kamien:hover{
+    background-image:none;
+    background:linear-gradient(red,blue)
+} */
+.symbol--papier {
+    background-image: url(images/papier.png);
+}
+.symbol--nozyczki {
+    background-image: url(images/nozyczki.png);
+}
+
+#wynik{
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.symbole--wylosowane {
+    border:0
+}
+.symbole--wylosowane .symbol {
+    border:0;
+    cursor:default;
+    text-align:center;
+    align-self: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.symbol--versus {
+    height: unset;
+    align-self: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.info {
+    display:flex;
+    justify-content: space-around;
+}
+
+.info>div {
+    padding:10px;
+}
